@@ -124,29 +124,6 @@ a2a-agents-with-python-sdk/
 
 ---
 
-## 🧩 Workflow Diagram
-
-```mermaid
-graph TD
-	subgraph Server Side
-		A[WeatherAgent (agent.py)] --> B[WeatherAgentExecutor (agent_executor.py)]
-		B --> C[A2AStarletteApplication (__main__.py)]
-		C --> D[HTTP API (A2A protocol)]
-	end
-
-	subgraph Client Side
-		E[Client (client.py)] --> D
-	end
-
-	F[User] --> E
-	D --> E
-
-	C --> G[Push Notifications / Streaming Updates]
-	E --> F
-```
-
----
-
 ## 🔄 Complete Flow Description
 
 ### 1. **User Interaction**
